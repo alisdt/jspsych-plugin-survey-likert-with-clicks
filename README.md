@@ -8,6 +8,16 @@ The survey-likert plugin displays a set of questions with Likert scale responses
 
 This version is modified to record the position of clicks on the page. This is done in page coordinates. It also records the position and width / height of the likert scale container element for comparison (so it's easy to determine the position of clicks relative to the scale).
 
+The extra parameters produced are:
+
+clicks
+: all clicks in page coordinates {x:, y:}
+
+likert_position
+: the position and size {left:, top:, width:, height:} of the first Likert scale displayed, also in page coordinates
+
+Tests unfortunately broken due to a module import path error.
+
 ## Examples
 
 Several example experiments and plugin demonstrations are available in the `/examples` folder.
